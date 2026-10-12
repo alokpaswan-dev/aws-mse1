@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>College Events</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>College Events</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="events.html">Events</a>
+      <a href="register.html">Registration</a>
+    </nav>
+  </header>
+
+  <main>
+    <p class="intro">Check out the events happening in our college.</p>
+    <div class="cards">
+      <div class="card event-card" id="event1">
+        <h3>Tech Fest</h3><p>Date: 20 October 2026</p><p>Venue: Main Auditorium</p><p>Explore technology and student projects.</p>
+      </div>
+      <div class="card event-card" id="event2">
+        <h3>Sports Day</h3><p>Date: 25 October 2026</p><p>Venue: College Ground</p><p>Take part in games and team competitions.</p>
+      </div>
+      <div class="card event-card" id="event3">
+        <h3>Cultural Night</h3><p>Date: 30 October 2026</p><p>Venue: Open Stage</p><p>Enjoy music, dance, and performances.</p>
+      </div>
+      <div class="card event-card" id="event4">
+        <h3>Art Competition</h3><p>Date: 5 November 2026</p><p>Venue: Room 101</p><p>Show your creativity and imagination.</p>
+      </div>
+    </div>
+
+    <section class="simple-section">
+      <h2>Add an Event Name</h2>
+      <input type="text" id="eventName" placeholder="Enter event name">
+      <button onclick="addEventName()">Add Event</button>
+      <p id="eventMessage"></p>
+      <p id="addedEvent"></p>
+      <button onclick="changeEventCard()">Change First Event Card</button>
+    </section>
+  </main>
+  <footer>Campus Event Management</footer>
+  <script src="script.js"></script>
+</body>
+</html>

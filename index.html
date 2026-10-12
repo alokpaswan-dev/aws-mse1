@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campus Event Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1 id="mainHeading">Campus Event Management</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="events.html">Events</a>
+      <a href="register.html">Registration</a>
+    </nav>
+  </header>
+
+  <section class="welcome">
+    <p>Hey! Welcome to our university campus events.</p>
+    <p>Join us to learn new things, meet people, and enjoy your college life.</p>
+    <a class="link-button" href="register.html">Event Register</a>
+  </section>
+
+  <main>
+    <h2>Upcoming Events</h2>
+    <div class="cards">
+      <div class="card" id="card1">
+        <h3>Tech Fest</h3>
+        <p>Date: 20 October 2026</p>
+        <p>Venue: Main Auditorium</p>
+      </div>
+      <div class="card" id="card2">
+        <h3>Sports Day</h3>
+        <p>Date: 25 October 2026</p>
+        <p>Venue: College Ground</p>
+      </div>
+      <div class="card" id="card3">
+        <h3>Cultural Night</h3>
+        <p>Date: 30 October 2026</p>
+        <p>Venue: Open Stage</p>
+      </div>
+    </div>
+
+    <div class="image" id="image1">
+      <img src="image\image3.png" alt="Techfest">
+    </div>
+    <div class="image" id="image2">
+      <img width="400px" src="image\image.png" alt="sportday">
+    </div>
+
+    <div class="buttons">
+      <button onclick="changeCardColour()">Change Card Colour</button>
+      <button onclick="toggleHighlights()">Show / Hide Highlights</button>
+    </div>
+
+    <section id="highlights" class="highlights">
+      <h2>Event Highlights</h2>
+      <p>Fun activities, teamwork, learning, competitions, and new friends!</p>
+    </section>
+  </main>
+  <footer>Campus Event Management</footer>
+  <script src="script.js"></script>
+</body>
+</html>

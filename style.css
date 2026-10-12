@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Georgia, serif;
+  color: #222;
+  background-color: white;
+}
+
+header {
+  text-align: center;
+  background-color: #eef7ff;
+  border-bottom: 1px solid #222;
+}
+
+header h1 {
+  margin: 0;
+  padding: 8px;
+  font-size: 36px;
+}
+
+nav {
+  padding: 12px;
+  background-color: #dceeff;
+}
+
+nav a {
+  margin: 0 14px;
+  color: #0645ad;
+}
+
+.welcome {
+  text-align: center;
+  background-color: #f0f7ff;
+  padding: 18px;
+  color: #666;
+}
+
+.welcome p {
+  margin: 8px;
+  font-size: 18px;
+}
+
+.link-button {
+  display: inline-block;
+  margin-top: 12px;
+  color: #0645ad;
+}
+
+main {
+  max-width: 950px;
+  margin: 25px auto;
+  padding: 0 16px;
+  text-align: center;
+}
+
+.intro {
+  color: #555;
+  font-size: 18px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  margin: 20px 0;
+}
+
+.card {
+  width: 220px;
+  padding: 16px;
+  background-color: #f0f7ff;
+  border: 1px solid #c6dcec;
+  border-radius: 5px;
+  text-align: left;
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.buttons {
+  margin: 20px 0;
+}
+
+button {
+  padding: 9px 13px;
+  margin: 5px;
+  border: 1px solid #777;
+  background-color: #e5eff8;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #d0e5f7;
+}
+
+.highlights, .simple-section {
+  background-color: #f7f7f7;
+  padding: 16px;
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+input, select {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  margin: 8px auto 16px;
+  border: 1px solid #aaa;
+}
+
+.registration-form {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f0f7ff;
+  border: 1px solid #c6dcec;
+  text-align: left;
+}
+
+.registration-form label {
+  display: block;
+  margin-top: 8px;
+}
+
+.registration-form button {
+  display: block;
+  margin: 12px auto 0;
+}
+
+#registrationMessage, #eventMessage, #addedEvent {
+  font-weight: bold;
+}
+
+footer {
+  margin-top: 35px;
+  padding: 14px;
+  text-align: center;
+  background-color: #eef7ff;
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 27px;
+  }
+
+  nav a {
+    margin: 0 6px;
+  }
+
+  .card {
+    width: 100%;
+  }
+}
+
+.hidden {
+  display: none;
+}
